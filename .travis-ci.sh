@@ -14,7 +14,6 @@ esac
 
 echo "yes" | sudo add-apt-repository ppa:$ppa
 sudo apt-get update -qq
-sudo dpkg --add-architecture i386
 sudo apt-get install -qq ocaml ocaml-native-compilers camlp4-extra opam gcc-multilib
 sudo apt-get install -qq libc6:i386 libncurses5:i386 libstdc++6:i386 lib32z1
 export OPAMYES=1
