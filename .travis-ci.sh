@@ -14,7 +14,7 @@ esac
 
 echo "yes" | sudo add-apt-repository ppa:$ppa
 sudo apt-get update -qq
-sudo apt-get install -qq ocaml ocaml-native-compilers camlp4-extra opam gcc-multilib
+sudo apt-get install -qq ocaml ocaml-native-compilers camlp4-extra opam gcc-multilib lib32stdc++6
 export OPAMYES=1
 opam init
 opam install ${OPAM_DEPENDS}
